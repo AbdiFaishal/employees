@@ -1,6 +1,6 @@
 # Employees
 
-API sederhana untuk memenuhi technical test.
+API sederhana untuk memenuhi technical test, untuk soal 1 - 3 file jawabannya ada didalam folder : src/customFunctions.
 
 ## Installation
 
