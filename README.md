@@ -19,3 +19,19 @@ npx sequelize db:migrate
 ```bash
 npx sequelize db:seed:all
 ```
+
+4. Edit file config untuk mengkoneksikan ke database di dalam folder : config/config.json
+```
+"development": {
+    "username": "root",
+    "password": "isikan_password",
+    "database": "isikan_nama_database",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+  }
+```
+
+5. Jalankan server dengan nodemon
+```bash
+npm run dev
+```
