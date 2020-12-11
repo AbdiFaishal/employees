@@ -31,7 +31,14 @@ npx sequelize db:seed:all
   }
 ```
 
-5. Jalankan server dengan nodemon
+5. Edit package.json untuk menambahkan script nodemon
+```
+"scripts": {
+    "dev": "nodemon index.js"
+  }
+```
+
+6. Jalankan server dengan nodemon
 ```bash
 npm run dev
 ```
