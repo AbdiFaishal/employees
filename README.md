@@ -31,7 +31,7 @@ npx sequelize db:seed:all
   }
 ```
 
-5. Edit package.json untuk menambahkan script nodemon
+5. Edit package.json untuk menambahkan script nodemon, pada bagian "scripts" tambahkan line dibawah
 ```
 "scripts": {
     "dev": "nodemon index.js"
