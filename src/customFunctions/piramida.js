@@ -1,11 +1,13 @@
-// https://stackoverflow.com/questions/20738935/how-to-display-pyramid-using-javascript
+// sumber : https://stackoverflow.com/questions/20738935/how-to-display-pyramid-using-javascript
+
+// Hasil yang diminta :
 
 //     *
 //    ***
 //   *****
 //  *******
 // *********
-//Piramida Segitiga
+// Piramida Segitiga
 
 function pyramid(n) {
   // Input or number of rows
@@ -22,7 +24,7 @@ function pyramid(n) {
 pyramid(5);
 
 // =======================================================
-// Hasil :
+// Hasil yang diminta :
 
 // *
 // **
@@ -35,9 +37,7 @@ function pyramid(n) {
   // Input or number of rows
   for (var i = 1; i <= n; i++) {
     var rowResult = '';
-    // For every each counter there exist 2*n-1 value
     for (var j = 1; j <= n; j++) {
-      // Hint: Check the workbook image
       j <= i ? (rowResult += '*') : (rowResult += ' ');
     }
     console.log(rowResult);
@@ -57,7 +57,7 @@ function generatePyramid(num) {
 generatePyramid(5);
 
 // =======================================================
-// Hasil :
+// Hasil yang diminta :
 
 //     *
 //    **
@@ -69,9 +69,7 @@ function pyramid(n) {
   // Input or number of rows
   for (var i = 1; i <= n; i++) {
     var rowResult = '';
-    // For every each counter there exist 2*n-1 value
     for (var j = 1; j <= n; j++) {
-      // Hint: Check the workbook image
       j <= n - i ? (rowResult += ' ') : (rowResult += '*');
     }
     console.log(rowResult);
@@ -80,7 +78,7 @@ function pyramid(n) {
 pyramid(5);
 
 // =======================================================
-// Hasil :
+// Hasil yang diminta :
 
 // *****
 // ****
@@ -93,9 +91,7 @@ function pyramid(n) {
   // Input or number of rows
   for (var i = 1; i <= n; i++) {
     var rowResult = '';
-    // For every each counter there exist 2*n-1 value
     for (var j = n; j >= 1; j--) {
-      // Hint: Check the workbook image
       j >= i ? (rowResult += '*') : (rowResult += ' ');
     }
     console.log(rowResult);
@@ -116,9 +112,7 @@ function pyramid(n) {
   // Input or number of rows
   for (var i = 1; i <= n; i++) {
     var rowResult = '';
-    // For every each counter there exist 2*n-1 value
     for (var j = 1; j <= n; j++) {
-      // Hint: Check the workbook image
       j >= i ? (rowResult += '*') : (rowResult += ' ');
     }
     console.log(rowResult);
