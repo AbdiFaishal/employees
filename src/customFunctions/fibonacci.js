@@ -1,22 +1,21 @@
 function fibonacci(num) {
-  let a = 1,
-    b = 0,
+  let currentValue = 1,
+    previousValue = 0,
     temp,
     result = '';
 
   while (num >= 0) {
     if (num >= 1) {
-      result += b + ' ';
+      result += previousValue + ' ';
     } else {
-      result += b;
+      result += previousValue;
     }
-    temp = a;
-    a = a + b;
-    b = temp;
+    temp = currentValue;
+    currentValue = currentValue + previousValue;
+    previousValue = temp;
     num--;
   }
 
   return result;
 }
-
 module.exports = fibonacci;

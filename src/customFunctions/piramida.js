@@ -16,7 +16,9 @@ function pyramid(n) {
     // For every each counter there exist 2*n-1 value
     for (var j = 1; j <= 2 * n - 1; j++) {
       // Hint: Check the workbook image
-      j >= n + 1 - i && j <= n - 1 + i ? (s += '*') : (s += ' ');
+      j >= n + 1 - i && j <= n - 1 + i
+        ? (rowResult += '*')
+        : (rowResult += '=');
     }
     console.log(rowResult);
   }
